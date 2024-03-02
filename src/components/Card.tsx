@@ -1,12 +1,11 @@
-export default function Card() {
+import { ICard } from "@/interfaces";
+
+export default function Card({ name, text, date }: ICard) {
   return (
-    <div className=" w-3/4 rounded-2xl bg-gray/40 p-5 shadow-md shadow-gray">
-      <h6 className=" font-bold">Nombre y apellido</h6>
-      <p className=" text-sm">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo in saepe
-        temporibus accusantium enim nulla eveniet et ab ad excepturi.
-      </p>
-      <p className=" mt-10 text-end text-xs">00/00/0000</p>
+    <div className=" w-80 rounded-2xl bg-light p-5 shadow-lg shadow-gray">
+      <h6 className=" font-bold"> {name} </h6>
+      <p className=" text-sm">{text}</p>
+      <p className=" mt-10 text-end text-xs"> {date} </p>
     </div>
   );
 }

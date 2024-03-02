@@ -1,4 +1,4 @@
-import { About, Banner, Contact, Header, Images, Testimonies } from "@/layouts";
+import { About, Banner, Contact, Header, Testimonies } from "@/layouts";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
         <About />
         <Banner />
         <Testimonies />
-        <Images />
+
         <Contact />
       </main>
     </>
