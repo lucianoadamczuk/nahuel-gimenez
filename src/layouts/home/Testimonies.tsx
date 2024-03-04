@@ -1,4 +1,4 @@
-import { Card, Carousel } from "@/components";
+import { Carousel } from "@/components";
 import { StyleTitle } from "@/styles";
 
 export default function Testimonies() {
@@ -26,7 +26,10 @@ export default function Testimonies() {
   ];
 
   return (
-    <section className="container grid place-items-center gap-10 py-20 lg:grid-cols-5">
+    <section
+      className="container grid place-items-center gap-10 py-20 pt-[60vh] lg:grid-cols-5"
+      id="testimonies"
+    >
       <section className=" grid space-y-5 lg:col-span-3">
         {/* text container */}
         <div>
@@ -37,7 +40,7 @@ export default function Testimonies() {
             quam ab dicta, omnis adipisci molestiae, unde cumque incidunt
             veritatis inventore.
           </p>
-          <div className=" mt-10 h-1 w-full bg-gradient-to-l from-gray to-transparent"></div>
+          <div className=" mt-10 h-1 w-full bg-gradient-to-l from-dark/30 to-transparent"></div>
         </div>
 
         {/* cards container */}

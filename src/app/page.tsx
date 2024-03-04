@@ -6,9 +6,10 @@ export default function Home() {
       <main>
         <Header />
         <About />
-        <Banner />
-        <Testimonies />
-
+        {/* The Banner wraps the component thatt will show up after the scroll animation */}
+        <Banner>
+          <Testimonies />
+        </Banner>
         <Contact />
       </main>
     </>

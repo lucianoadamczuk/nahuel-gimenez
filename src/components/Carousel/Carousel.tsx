@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -16,13 +16,26 @@ import { Card } from "..";
 import { ICard } from "@/interfaces";
 
 export default function Carousel({ display }: { display: ICard[] }) {
+  const [isMobile, setIsMobile] = useState<boolean>();
+  useEffect(() => {
+    function handleWidth() {
+      window.innerWidth > 1024 ? setIsMobile(false) : setIsMobile(true);
+    }
+
+    handleWidth();
+    window.addEventListener(`resize`, handleWidth);
+    return () => {
+      window.removeEventListener(`resize`, handleWidth);
+    };
+  }, []);
+
   return (
     <>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={2}
+        slidesPerView={isMobile ? 1 : 2}
         coverflowEffect={{
           rotate: 2,
           stretch: 10,
