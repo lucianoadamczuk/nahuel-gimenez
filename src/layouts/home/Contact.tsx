@@ -1,19 +1,16 @@
 "use client";
 import { Form } from "@/components";
 import { StyleTitle } from "@/styles";
+import { content } from "../../../public/locales/es";
 
 export default function Contact() {
+
   return (
     <div id="contact">
       {/*  ----------------------------- Mobile version ---------------------------- */}
-      <section className="container py-20 md:hidden">
-        <h3 className={StyleTitle()}>Contacto</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia
-          aperiam, assumenda aspernatur soluta reiciendis, debitis dicta nobis
-          cum eum, unde veniam asperiores repudiandae officiis. Dolorem minus
-          consequatur aut odio?
-        </p>
+      <section className="container pb-20 md:hidden">
+        <h3 className={StyleTitle()}> {content.contact.title} </h3>
+        <p dangerouslySetInnerHTML={{__html: content.contact.text}}></p>
 
         <article className="flex justify-center rounded-3xl bg-gradient-to-t  from-gray from-70% to-transparent to-30% py-10">
           <Form />
@@ -25,13 +22,8 @@ export default function Contact() {
         <article className="container flex items-center rounded-3xl bg-gradient-to-r from-gray from-80% to-transparent to-30% py-20  ">
           {/* text container */}
           <div>
-            <h3 className={StyleTitle()}>Contacto</h3>
-            <p className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia
-              aperiam, assumenda aspernatur soluta reiciendis, debitis dicta
-              nobis cum eum, unde veniam asperiores repudiandae officiis.
-              Dolorem minus consequatur aut odio?
-            </p>
+            <h3 className={StyleTitle()}> {content.contact.title} </h3>
+            <p dangerouslySetInnerHTML={{__html: content.contact.text}}></p>
           </div>
 
           {/* form */}

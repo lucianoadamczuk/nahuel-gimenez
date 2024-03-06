@@ -1,7 +1,14 @@
 import { IconArrow } from "@/icons";
 import { StyleIcon, StyleTitle } from "@/styles";
 
-export default function Header() {
+interface Props {
+  title: string
+  highlight: string
+  title2: string
+  text: string
+  phrase: string
+}
+export default function Header({title, highlight, title2, text, phrase}: Props) {
   return (
     <header
       className="container grid place-items-center gap-5 gap-x-20 pt-32  md:grid-cols-2 "
@@ -11,19 +18,14 @@ export default function Header() {
         {/* title and text */}
         <article className="space-y-2">
           <h3 className={StyleTitle()}>
-            Lorem ipsum{" "}
+            {title} {" "}
             <span className=" rounded-[30px] bg-gradient-to-r from-primary to-primary-light px-2 text-light">
-              dolor
+              {highlight}
             </span>{" "}
-            sit amet.
+            {title2}
           </h3>
 
-          <p className="">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
-            debitis beatae ipsum cum quasi quae sit labore deleniti ea
-            asperiores. Expedita voluptate quas odit quos nihil aspernatur magni
-            dicta corrupti!
-          </p>
+          <p dangerouslySetInnerHTML={{__html: text}}></p>
         </article>
 
         {/* Decorative box */}
@@ -60,10 +62,7 @@ export default function Header() {
         {/* phrase */}
         <div className=" absolute bottom-0 right-0 w-2/4 rounded-tl-xl bg-light p-5 text-center text-xs">
           {/* phrase */}
-          <>
-            Empiece a <span className=" font-bold ">modelar</span> su futuro
-            ahora.
-          </>
+          <p dangerouslySetInnerHTML={{__html: phrase}}></p>
         </div>
       </article>
     </header>

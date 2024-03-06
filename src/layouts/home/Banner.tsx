@@ -1,6 +1,7 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ReactNode, useRef, useState } from "react";
+import { content } from "../../../public/locales/es";
 export default function Banner({ children }: { children: ReactNode }) {
   /* ------------------------------- animations start ------------------------------- */
   const ref = useRef(null);
@@ -10,7 +11,7 @@ export default function Banner({ children }: { children: ReactNode }) {
   });
 
   // Zoom
-  const animateZoom = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
+  const animateZoom = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   // Opacity
   const animateOpacity = useTransform(
@@ -27,6 +28,7 @@ export default function Banner({ children }: { children: ReactNode }) {
 
   /* ----------------------------------- animations end ---------------------------------- */
 
+
   return (
     <section className="relative">
       <motion.section
@@ -38,7 +40,7 @@ export default function Banner({ children }: { children: ReactNode }) {
           className=" text-center text-6xl uppercase tracking-widest text-gray"
           style={{ scale: animateZoom }}
         >
-          Frase de venta
+          {content.banner}
         </motion.p>
       </motion.section>
       {children}

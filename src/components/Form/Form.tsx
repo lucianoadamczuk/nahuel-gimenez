@@ -19,12 +19,12 @@ export default function Form() {
   }, []);
   /* ----------------------------- end animations ----------------------------- */
 
-  /* ------------------------------ start form handling ----------------------------- */
+  /* ------------------------------ start data handling ----------------------------- */
   const [formData, setFormData] = useState({
     name: undefined,
     email: undefined,
     location: "CABA",
-    typeOfBuy: "Contado",
+    typeOfInvestment: "Contado",
     investment: undefined,
     currency: "USD",
     mensage: undefined,
@@ -40,6 +40,9 @@ export default function Form() {
   }
 
   /* ---------------------------- end form handling --------------------------- */
+
+  /* ---------------------------- Start send mail --------------------------- */
+
 
   return (
     <motion.form
@@ -77,7 +80,7 @@ export default function Form() {
 
       {/* location  */}
       <div className="w-full">
-        <label htmlFor="location">Ubicación</label>
+        <label htmlFor="location">Ubicación de la inversión</label>
         <select
           name="location"
           onChange={handleChange}
@@ -93,9 +96,9 @@ export default function Form() {
 
       {/* type of buy */}
       <div>
-        <label htmlFor="Type of buy">Tipo de compra</label>
+        <label htmlFor="Type of buy">Tipo de inversión</label>
         <select
-          name="typeOfBuy"
+          name="typeOfInvestment"
           onChange={handleChange}
           className={StyleInput()}
         >
@@ -150,13 +153,12 @@ export default function Form() {
         ></textarea>
       </div>
       {/* button */}
-      <div className=" flex justify-center pt-5 ">
-        <div
+      <div className=" flex justify-center pt-2 ">
+        <button 
           className={StyleButtton({ size: "small" })}
-          onClick={() => console.log(formData)}
         >
           Enviar
-        </div>
+        </button>
       </div>
     </motion.form>
   );
