@@ -21,9 +21,13 @@ export default function About() {
 
       <section className="grid gap-2 lg:grid-cols-3">
         {/* box 1 */}
-          <div className=" bg-gray p-5">
+          <motion.div 
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6 }} className=" bg-gray p-5"
+          >
             <p dangerouslySetInnerHTML={{__html: content.about.box1}}></p>
-          </div>
+          </motion.div>
 
           {/* box 2 */}
           <motion.div
