@@ -12,7 +12,7 @@ export default function Header() {
         {/* title and text */}
         <article className="space-y-2">
           <h3 className={StyleTitle()}>
-            {content.header.title}
+            {content.header.title}{" "}
             <span className=" whitespace-nowrap rounded-[30px] bg-gradient-to-r from-primary to-primary-light px-2 text-light">
               {content.header.highlight}
             </span>{" "}
