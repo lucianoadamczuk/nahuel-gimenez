@@ -4,13 +4,12 @@ import { StyleTitle } from "@/styles";
 import { content } from "../../../public/locales/es";
 
 export default function Contact() {
-
   return (
     <div id="contact">
       {/*  ----------------------------- Mobile version ---------------------------- */}
-      <section className="container pb-20 md:hidden">
+      <section className="container py-20 md:hidden">
         <h3 className={StyleTitle()}> {content.contact.title} </h3>
-        <p dangerouslySetInnerHTML={{__html: content.contact.text}}></p>
+        <p dangerouslySetInnerHTML={{ __html: content.contact.text }}></p>
 
         <article className="flex justify-center rounded-3xl bg-gradient-to-t  from-gray from-70% to-transparent to-30% py-10">
           <Form />
@@ -23,7 +22,7 @@ export default function Contact() {
           {/* text container */}
           <div>
             <h3 className={StyleTitle()}> {content.contact.title} </h3>
-            <p dangerouslySetInnerHTML={{__html: content.contact.text}}></p>
+            <p dangerouslySetInnerHTML={{ __html: content.contact.text }}></p>
           </div>
 
           {/* form */}

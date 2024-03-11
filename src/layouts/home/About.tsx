@@ -68,10 +68,10 @@ export default function About() {
           initial={initial}
           whileInView={whileInView}
           transition={transition}
-          className=" flex flex-wrap justify-evenly p-5 lg:col-span-2"
+          className=" flex flex-wrap justify-around gap-5 p-5 lg:col-span-2"
         >
           {content.about.box4.map((item) => (
-            <p key={item} className="font-bold uppercase">
+            <p key={item} className="animate-pulse font-bold uppercase">
               {item}
             </p>
           ))}
