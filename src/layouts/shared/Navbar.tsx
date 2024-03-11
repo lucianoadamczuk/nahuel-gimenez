@@ -29,10 +29,9 @@ export default function Navbar() {
               className={`relative z-40 flex flex-col justify-center overflow-hidden rounded-md bg-gradient-to-t from-gray to-light px-4 duration-300 lg:hidden ${!isOpen ? "h-0" : "h-[85vh]"} `}
             >
               {links.map(({ name, path }, index) => (
-                <Link
+                <a
                   key={name}
                   href={path}
-                  replace
                   onClick={() => setIsOpen(false)}
                   className={
                     index !== links.length - 1
@@ -43,7 +42,7 @@ export default function Navbar() {
                   }
                 >
                   {name}
-                </Link>
+                </a>
               ))}
             </div>
           </section>
@@ -54,7 +53,6 @@ export default function Navbar() {
               <Link
                 key={name}
                 href={path}
-                replace
                 onClick={() => setIsOpen(false)}
                 className={
                   index !== links.length - 1
