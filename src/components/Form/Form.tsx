@@ -10,11 +10,7 @@ import {
   useState,
 } from "react";
 import emailjs from "@emailjs/browser";
-import {
-  PUBLIC_API_KEY,
-  SERVICE_ID,
-  TEMPLATE_ID,
-} from "../../../public/API/emailJS";
+import { PUBLIC_API_KEY, SERVICE_ID, TEMPLATE_ID } from "../../API/emailJS";
 import { ICheck } from "@/icons";
 
 export default function Form() {

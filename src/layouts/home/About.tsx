@@ -4,13 +4,17 @@ import { motion } from "framer-motion";
 import { content } from "../../../public/locales/es";
 
 export default function About() {
+  const initial = { opacity: 0, scale: 0 };
+  const whileInView = { opacity: 1, scale: 1 };
+  const transition = { duration: 0.6, type: "spring" };
+
   return (
     <div className="container space-y-2 py-20 " id="about">
       {/* main */}
       <motion.section
-        initial={{ scale: 0, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.6 }}
+        initial={initial}
+        whileInView={whileInView}
+        transition={transition}
         className=" rounded-t-3xl bg-gradient-to-tr from-gray  to-transparent"
       >
         <div className=" p-10">
@@ -25,24 +29,22 @@ export default function About() {
       <section className="grid gap-2 lg:grid-cols-3">
         {/* box 1 */}
         <motion.div
-          initial={{ scale: 0, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          className=" bg-gray p-10"
+          initial={initial}
+          whileInView={whileInView}
+          transition={transition}
+          className=" bg-gray p-10 text-center"
         >
           <p dangerouslySetInnerHTML={{ __html: content.about.box1 }}></p>
         </motion.div>
 
         {/* box 2 */}
         <motion.div
-          initial={{ scale: 0, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
+          initial={initial}
+          whileInView={whileInView}
           transition={{ duration: 0.6 }}
-          className=" bg-gradient-to-tr from-primary to-primary-light p-10 text-light "
+          className=" flex items-center bg-gradient-to-tr from-primary to-primary-light p-10 text-center text-light "
         >
           <p dangerouslySetInnerHTML={{ __html: content.about.box2 }}></p>
-          <p>100</p>
-          <p>clientes</p>
         </motion.div>
 
         {/* Empty box used to occupy space and only appears on desktop */}
@@ -50,9 +52,9 @@ export default function About() {
 
         {/* box 3 */}
         <motion.div
-          initial={{ scale: 0, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.3 }}
+          initial={initial}
+          whileInView={whileInView}
+          transition={transition}
           className=" rounded-b-3xl bg-gray p-10 text-center lg:col-span-2"
         >
           <p dangerouslySetInnerHTML={{ __html: content.about.box3 }}></p>
@@ -63,14 +65,16 @@ export default function About() {
 
         {/* box 4 */}
         <motion.div
-          initial={{ scale: 0, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.3 }}
-          className=" flex justify-evenly p-5 lg:col-span-2"
+          initial={initial}
+          whileInView={whileInView}
+          transition={transition}
+          className=" flex flex-wrap justify-evenly p-5 lg:col-span-2"
         >
-          <p>Lorem, ipsum.</p>
-          <p>Lorem, ipsum.</p>
-          <p>Lorem, ipsum.</p>
+          {content.about.box4.map((item) => (
+            <p key={item} className="font-bold uppercase">
+              {item}
+            </p>
+          ))}
         </motion.div>
       </section>
     </div>

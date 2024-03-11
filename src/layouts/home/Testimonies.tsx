@@ -28,7 +28,7 @@ export default function Testimonies() {
 
   return (
     <section
-      className="container grid place-items-center gap-10 py-20 pt-[40vh] lg:grid-cols-5"
+      className="container grid place-items-center gap-10 py-20 pt-[50vh] lg:grid-cols-5"
       id="testimonies"
     >
       <section className=" grid space-y-5 lg:col-span-3">
@@ -50,7 +50,7 @@ export default function Testimonies() {
         }}
       ></div>
       <div
-        className=" h-60 w-full bg-cover bg-fixed bg-center opacity-60 lg:hidden"
+        className=" h-96 w-full bg-cover bg-fixed bg-center opacity-60 lg:hidden"
         style={{
           backgroundImage: "url(/assets/images/home/testimonies-mobile.jpg)",
         }}

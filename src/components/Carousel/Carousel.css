@@ -6,4 +6,10 @@
       padding-bottom: 50px;
     }
   }
+
+  > .swiper-pagination {
+    > .swiper-pagination-bullet {
+      @apply bg-highlight;
+    }
+  }
 }

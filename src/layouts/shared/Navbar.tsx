@@ -1,5 +1,6 @@
 "use client";
-import { StyleButtton } from "@/styles";
+import { ICross, IMenu } from "@/icons";
+import { StyleButtton, StyleIcon } from "@/styles";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -65,7 +66,11 @@ export default function Navbar() {
           </div>
 
           <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "open" : "close"}
+            {!isOpen ? (
+              <IMenu className={StyleIcon({ size: "sm", color: "dark" })} />
+            ) : (
+              <ICross className={StyleIcon({ size: "sm", color: "dark" })} />
+            )}
           </button>
         </div>
       </div>

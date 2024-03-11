@@ -1,4 +1,10 @@
 {
+  "config": {
+    "title": "Casa Teva",
+    "description": "somos tu aliada confiable en el mundo de las inversiones inmobiliarias. Aquí nos dedicamos a ofrecer asesoramiento experto y servicios integrales para ayudarte a realizar las mejores inversiones en bienes raíces.",
+    "email": "",
+    "phone": ""
+  },
   "header": {
     "title": "Bienvenido a",
     "highlight": "Casa teva",
@@ -9,9 +15,10 @@
   "about": {
     "title": "Acerca de nosotros",
     "text": "Nos esforzamos por ofrecer <strong>soluciones</strong> innovadoras y estratégicas que se adapten a las necesidades individuales de cada cliente, con el objetivo de garantizar su <strong>satisfacción y éxito</strong> en sus inversiones inmobiliarias.",
-    "box1": "Nuestro <strong>compromiso</strong> es hacer que el proceso de compra de inmuebles sea <strong>más fácil</strong> para nuestros clientes, brindándoles asesoramiento personalizado y apoyo en cada etapa del camino.",
-    "box2": "Más de 100 clientes",
-    "box3": "Reconocemos que adquirir una propiedad es un gran paso, y estamos aquí para <strong>acompañarte</strong/> en la búsqueda de tu casa, tu mejor inversión."
+    "box1": "Nuestro <strong>compromiso</strong> es hacer que el proceso de compra de inmuebles sea <strong>más fácil</strong> para nuestros clientes.",
+    "box2": "Asesoramiento personalizado y apoyo en cada etapa del camino.",
+    "box3": "Reconocemos que adquirir una propiedad es un gran paso, y estamos aquí para <strong>acompañarte</strong/> en la búsqueda de tu casa, tu mejor inversión.",
+    "box4": ["Compromiso", "Seguridad", "Asistencia"]
   },
   "banner": "Ellos ya confiaron",
   "testimonies": {
