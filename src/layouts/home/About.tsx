@@ -13,31 +13,37 @@ export default function About() {
         transition={{ duration: 0.6 }}
         className=" rounded-t-3xl bg-gradient-to-tr from-gray  to-transparent"
       >
-        <div className="container py-20">
+        <div className=" p-10">
           <h3 className={StyleTitle()}> {content.about.title} </h3>
-          <p className=" lg:w-1/2" dangerouslySetInnerHTML={{__html: content.about.text}}></p>
+          <p
+            className=" lg:w-1/2"
+            dangerouslySetInnerHTML={{ __html: content.about.text }}
+          ></p>
         </div>
       </motion.section>
 
       <section className="grid gap-2 lg:grid-cols-3">
         {/* box 1 */}
-          <motion.div 
-            initial={{ scale: 0, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.6 }} className=" bg-gray p-5"
-          >
-            <p dangerouslySetInnerHTML={{__html: content.about.box1}}></p>
-          </motion.div>
+        <motion.div
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className=" bg-gray p-10"
+        >
+          <p dangerouslySetInnerHTML={{ __html: content.about.box1 }}></p>
+        </motion.div>
 
-          {/* box 2 */}
-          <motion.div
-            initial={{ scale: 0, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            className=" bg-gradient-to-tr from-primary to-primary-light p-5 text-light "
-          >
-            <p dangerouslySetInnerHTML={{__html: content.about.box2}}></p>
-          </motion.div>
+        {/* box 2 */}
+        <motion.div
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className=" bg-gradient-to-tr from-primary to-primary-light p-10 text-light "
+        >
+          <p dangerouslySetInnerHTML={{ __html: content.about.box2 }}></p>
+          <p>100</p>
+          <p>clientes</p>
+        </motion.div>
 
         {/* Empty box used to occupy space and only appears on desktop */}
         <div className="hidden lg:block"></div>
@@ -47,9 +53,9 @@ export default function About() {
           initial={{ scale: 0, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.3 }}
-          className=" rounded-b-3xl bg-gray p-5 text-center lg:col-span-2"
+          className=" rounded-b-3xl bg-gray p-10 text-center lg:col-span-2"
         >
-          <p dangerouslySetInnerHTML={{__html: content.about.box3}}></p>
+          <p dangerouslySetInnerHTML={{ __html: content.about.box3 }}></p>
         </motion.div>
 
         {/* Empty box used to occupy space and only appears on desktop */}

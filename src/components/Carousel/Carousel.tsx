@@ -47,8 +47,8 @@ export default function Carousel({ display }: { display: ICard[] }) {
         modules={[EffectCoverflow, Pagination]}
         className="Carousel "
       >
-        {display.map(({ name, text, date }) => (
-          <SwiperSlide key={text}>
+        {display.map(({ name, text, date }, index) => (
+          <SwiperSlide key={text + index}>
             <Card name={name} text={text} date={date} />
           </SwiperSlide>
         ))}

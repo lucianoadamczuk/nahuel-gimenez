@@ -1,25 +1,25 @@
 {
-    "header": {
-      "title": "Bienvenido a",
-      "highlight": "Casa teva",
-      "title-2": "tu aliada confiable en el mundo de las inversiones inmobiliarias.",
-      "text": "Aquí nos dedicamos a ofrecer <strong>asesoramiento experto</strong> y <strong>servicios integrales</strong> para ayudarte a realizar las mejores inversiones en bienes raíces.",
-      "phrase": "Empiece a <strong>modelar</strong> su futuro ahora."
-    },
-    "about": {
-      "title": "Acerca de nosotros",
-      "text": "Nos esforzamos por ofrecer <strong>soluciones</strong> innovadoras y estratégicas que se adapten a las necesidades individuales de cada cliente, con el objetivo de garantizar su <strong>satisfacción y éxito</strong> en sus inversiones inmobiliarias.",
-      "box1": "Nuestro <strong>compromiso</strong> es hacer que el proceso de compra de inmuebles sea <strong>más fácil</strong> para nuestros clientes, brindándoles asesoramiento personalizado y apoyo en cada etapa del camino.",
-      "box2": "Más de 100 clientes",
-      "box3": "Reconocemos que adquirir una propiedad es un gran paso, y estamos aquí para <strong>acompañarte</strong/> en la búsqueda de tu casa, tu mejor inversión."
-    },
-    "banner": "Ellos ya confiaron",
-    "testimonies": {
-      "title": "Testimonios",
-      "text": "Nada habla más sobre nuestro compromiso y éxito que las experiencias de nuestros <strong>clientes satisfechos</strong>. Descubre lo que dicen sobre nosotros en nuestra sección de testimonios."
-    },
-		"contact": {
-			"title": "Contactenos",
-			"text": "¿Listo para comenzar tu viaje hacia una inversión inmobiliaria exitosa? <strong>Programa una consulta gratuita</strong> ¡No esperes más, comienza a cumplir tu objetivo hoy mismo!"
-		}
+  "header": {
+    "title": "Bienvenido a",
+    "highlight": "Casa teva",
+    "title-2": "tu aliada confiable en el mundo de las inversiones inmobiliarias.",
+    "text": "Aquí nos dedicamos a ofrecer <strong>asesoramiento experto</strong> y <strong>servicios integrales</strong> para ayudarte a realizar las mejores inversiones en bienes raíces.",
+    "phrase": "Empiece a <strong>modelar</strong> su futuro ahora."
+  },
+  "about": {
+    "title": "Acerca de nosotros",
+    "text": "Nos esforzamos por ofrecer <strong>soluciones</strong> innovadoras y estratégicas que se adapten a las necesidades individuales de cada cliente, con el objetivo de garantizar su <strong>satisfacción y éxito</strong> en sus inversiones inmobiliarias.",
+    "box1": "Nuestro <strong>compromiso</strong> es hacer que el proceso de compra de inmuebles sea <strong>más fácil</strong> para nuestros clientes, brindándoles asesoramiento personalizado y apoyo en cada etapa del camino.",
+    "box2": "Más de 100 clientes",
+    "box3": "Reconocemos que adquirir una propiedad es un gran paso, y estamos aquí para <strong>acompañarte</strong/> en la búsqueda de tu casa, tu mejor inversión."
+  },
+  "banner": "Ellos ya confiaron",
+  "testimonies": {
+    "title": "Testimonios",
+    "text": "Nada habla más sobre nuestro compromiso y éxito que las experiencias de nuestros <strong>clientes satisfechos</strong>. Te invitamos a descubrir lo que dicen sobre nosotros."
+  },
+  "contact": {
+    "title": "Contactenos",
+    "text": "¿Listo para comenzar tu viaje hacia una inversión inmobiliaria exitosa? <strong>Programa una consulta gratuita</strong> ¡No esperes más, comienza a cumplir tu objetivo hoy mismo!"
+  }
 }
