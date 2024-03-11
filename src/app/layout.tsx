@@ -3,6 +3,7 @@ import { Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/layouts/shared/Navbar";
 import { content } from "../../public/locales/es";
+import { Footer } from "@/layouts";
 
 const text = Nunito({
   subsets: ["latin"],
@@ -23,7 +24,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${text.className} text-balance bg-light text-dark`}>
         <Navbar />
-        {children}
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

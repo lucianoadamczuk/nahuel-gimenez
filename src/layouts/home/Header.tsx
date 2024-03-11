@@ -1,20 +1,8 @@
 import { IconArrow } from "@/icons";
 import { StyleIcon, StyleTitle } from "@/styles";
+import { content } from "../../../public/locales/es";
 
-interface Props {
-  title: string;
-  highlight: string;
-  title2: string;
-  text: string;
-  phrase: string;
-}
-export default function Header({
-  title,
-  highlight,
-  title2,
-  text,
-  phrase,
-}: Props) {
+export default function Header() {
   return (
     <header
       className="container grid place-items-center gap-5 gap-x-20 pt-32  md:grid-cols-2 "
@@ -24,14 +12,14 @@ export default function Header({
         {/* title and text */}
         <article className="space-y-2">
           <h3 className={StyleTitle()}>
-            {title}{" "}
+            {content.header.title}
             <span className=" whitespace-nowrap rounded-[30px] bg-gradient-to-r from-primary to-primary-light px-2 text-light">
-              {highlight}
+              {content.header.highlight}
             </span>{" "}
-            {title2}
+            {content.header["title-2"]}
           </h3>
 
-          <p dangerouslySetInnerHTML={{ __html: text }}></p>
+          <p dangerouslySetInnerHTML={{ __html: content.header.text }}></p>
         </article>
       </article>
 
@@ -73,7 +61,7 @@ export default function Header({
         {/* phrase */}
         <div className=" absolute bottom-0 right-0 w-2/4 rounded-tl-xl bg-light p-5 text-center text-xs">
           {/* phrase */}
-          <p dangerouslySetInnerHTML={{ __html: phrase }}></p>
+          <p dangerouslySetInnerHTML={{ __html: content.header.phrase }}></p>
         </div>
       </article>
     </header>
