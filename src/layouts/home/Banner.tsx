@@ -16,7 +16,7 @@ export default function Banner({ children }: { children: ReactNode }) {
   // Opacity
   const animateOpacity = useTransform(
     scrollYProgress,
-    [0.7, 1],
+    [0.7, 0.9],
     ["100%", "0%"],
   );
 
