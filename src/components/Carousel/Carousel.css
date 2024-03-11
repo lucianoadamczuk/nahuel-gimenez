@@ -9,7 +9,7 @@
 
   > .swiper-pagination {
     > .swiper-pagination-bullet {
-      @apply bg-highlight;
+      @apply bg-primary-light;
     }
   }
 }

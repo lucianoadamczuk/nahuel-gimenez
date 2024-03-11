@@ -53,13 +53,21 @@ export default function Header({
           </div>
         </a>
 
-        {/* video */}
+        {/* video mobile*/}
+        <video
+          autoPlay
+          muted
+          loop
+          src="/assets/videos/home/header-mobile.mp4"
+          className=" h-96 w-full object-cover opacity-20 lg:hidden"
+        ></video>
+        {/* video desktop*/}
         <video
           autoPlay
           muted
           loop
           src="/assets/videos/home/header-desktop.mp4"
-          className=" h-full w-full object-cover opacity-20"
+          className=" hidden h-full w-full object-cover opacity-20 lg:block"
         ></video>
 
         {/* phrase */}
