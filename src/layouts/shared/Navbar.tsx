@@ -32,6 +32,7 @@ export default function Navbar() {
                 <Link
                   key={name}
                   href={path}
+                  replace
                   onClick={() => setIsOpen(false)}
                   className={
                     index !== links.length - 1
@@ -53,6 +54,7 @@ export default function Navbar() {
               <Link
                 key={name}
                 href={path}
+                replace
                 onClick={() => setIsOpen(false)}
                 className={
                   index !== links.length - 1

@@ -2,7 +2,6 @@
 import { StyleTitle } from "@/styles";
 import { motion } from "framer-motion";
 import { content } from "../../../public/locales/es";
-import { useEffect, useState } from "react";
 
 export default function About() {
   const initial = { opacity: 0, scale: 0 };

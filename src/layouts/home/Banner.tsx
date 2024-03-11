@@ -28,7 +28,6 @@ export default function Banner({ children }: { children: ReactNode }) {
 
   /* ----------------------------------- animations end ---------------------------------- */
 
-
   return (
     <section className="relative">
       <motion.section
